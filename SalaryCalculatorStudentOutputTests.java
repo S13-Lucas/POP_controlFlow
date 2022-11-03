@@ -13,13 +13,13 @@ public class SalaryCalculatorStudentOutputTests {
 		SalaryCalculator salary = new SalaryCalculator();
 		
 		//Task1
-		//System.out.println(salary.salaryTax(30000));
-		//System.out.println(salary.calculateNI(50000, 'c'));
+		System.out.println(salary.salaryTax(30000));
+		System.out.println(salary.calculateNI(50000, 'c'));
 
 		//Task 2
-		double[] sals = {23000.50, 25478.66, 78496.56};
-		//System.out.println(salary.salaryTotal(sals));
-		//System.out.println(salary.salaryAverage(sals));
+		double[] sal = {23000.50, 25478.66, 78496.56};
+		//System.out.println(salary.salaryTotal(sal));
+		System.out.println(salary.salaryAverage(sal));
 		//System.out.println(Arrays.toString(salary.salaryIncrease(sals)));
 	}
 
