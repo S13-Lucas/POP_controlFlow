@@ -18,7 +18,7 @@ public class SalaryCalculatorStudentOutputTests {
 
 		//Task 2
 		double[] sal = {23000.50, 25478.66, 78496.56};
-		//System.out.println(salary.salaryTotal(sal));
+		System.out.println(salary.salaryTotal(sal));
 		System.out.println(salary.salaryAverage(sal));
 		//System.out.println(Arrays.toString(salary.salaryIncrease(sals)));
 	}

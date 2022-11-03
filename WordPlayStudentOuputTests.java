@@ -18,7 +18,7 @@ public class WordPlayStudentOuputTests {
 		//System.out.println(wordPlay.whatComesFirst("ant", "Ant"));
 		//System.out.println(wordPlay.whatComesFirst("Fred", "ddddddd"));
 
-		//System.out.println(wordPlay.backwardsString("This is programming!"));
+		System.out.println(wordPlay.backwardsString("This is programming!"));
 
 		String[] names = {"Tom","Dick","Harry"};
 		String[] numbers = {"0111","0554","4532"};

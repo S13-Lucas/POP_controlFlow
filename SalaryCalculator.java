@@ -35,27 +35,32 @@ public class SalaryCalculator {
 
     //Task 3
     public double salaryTotal(double[] sal) {
-        double total = 0;
+    double total = 0;
         for (int i = 0; i < 3; i++) {   // commentd the junit test out as it was saying it has an error
-            total = total + sal[i];
+           total = total + sal[i];
         }
         return total;
     }
 
 
-	// Task 4
-	 public double salaryAverage(double[] sal) {
-		double average = 0;
+    // Task 4
+    public double salaryAverage(double[] sal) {
+        double average = 0;
 
         for (int i = 0; i < 3; i++) {   //
             average = average + sal[i];
         }
-    return average/3;
-	}
+        return average/3;
+    }
 
-	//Task 5
-	/* public ?? salaryIncrease(??) {
-		return ??;
-	}*/
+    //Task 5
+	 public double[] salaryIncrease(double[] sal) {
+      double[] out = {0, 0, 0};
+        for (int i = 0; i < 3; i++) {
+            out[i] = sal[i] * 1.05;
+        }
+
+        return out;
+	}
 
 }
