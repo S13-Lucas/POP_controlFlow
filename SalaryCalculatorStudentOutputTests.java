@@ -17,10 +17,10 @@ public class SalaryCalculatorStudentOutputTests {
 		System.out.println(salary.calculateNI(50000, 'c'));
 
 		//Task 2
-		double[] sal = {23000.50, 25478.66, 78496.56};
-		System.out.println(salary.salaryTotal(sal));
-		System.out.println(salary.salaryAverage(sal));
-		//System.out.println(Arrays.toString(salary.salaryIncrease(sals)));
+		double[] sals = {23000.50, 25478.66, 78496.56};
+		System.out.println(salary.salaryTotal(sals));
+		System.out.println(salary.salaryAverage(sals));
+		System.out.println(arrays.toString(salary.salaryIncrease(sals)));
 	}
 
 }

@@ -8,7 +8,15 @@ import java.util.Random;
 public class WordPlay {
 
     //Task1
-	public String whatComesFirst(String word1, String word2) {
+
+    /**
+     * finds what word comes first alphabetically or if they are the same
+     * @param word1 holds the first word
+     * @param word2 holds the second word
+     * @return returns which comes first
+     */
+    //I have been unable to make this pass the Junit test after extensive trial and error as it says I have an error when the words are the same, using ignoreCase has not worked
+    public String whatComesFirst(String word1, String word2) {
 
         if ((word1.compareToIgnoreCase(word2)) < 0) {
             return (word1 + " comes before " + word2 + " in the alphabet");
@@ -17,25 +25,38 @@ public class WordPlay {
         } else if ((word1.compareToIgnoreCase(word2)) > 0) {
             return (word2 + " comes before " + word1 + " in the alphabet");
         } else {
-         return "d";
+            return "d";
         }
     }
 
 
 
     //Task 2
+
+    /**
+     * reverse a string
+     * @param word holds the word
+     * @return returns modified string
+     */
     public String backwardsString(String word) {
         String wordX = "";
 
         for (int i = word.length()-1; i >= 0; i--) {
-            wordX += word.substring(i, i+1);
+            wordX = wordX + word.substring(i, i+1);
 
         }
         return wordX;
     }
 
     //Task 3
-	public String[] addressBook(String[] names, String[] numbers ) {
+
+    /**
+     * creates an 'address book' by assigning names to numbers
+     * @param names holds an array of names
+     * @param numbers holds an array of numbers
+     * @return returns the names concatenated with the numbers
+     */
+    public String[] addressBook(String[] names, String[] numbers ) {
         for (int i = 0; i < 3; i++) {
             names[i] = names[i] + " " + numbers[i];
         }
@@ -43,7 +64,13 @@ public class WordPlay {
     }
 
     //Task 4
-	public String rockPaperScissors(String guess) {
+
+    /**
+     * simulates the game rock paper scissors by using a given guess and a randomised result
+     * @param guess holds guess
+     * @return returns the result of the game
+     */
+    public String rockPaperScissors(String guess) {
         Random rnd = new Random();
         int myRndNum = rnd.nextInt(3);
 
@@ -81,5 +108,5 @@ public class WordPlay {
         }
 
 
-	}
+    }
 }
